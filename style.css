@@ -17,11 +17,12 @@ header {
     background: #fff;
 }
 
-ul {
+header ul {
     display: flex;
     gap: 30px;
-    text-decoration: none;
     list-style: none;
+    margin-top: 20px;
+    align-items: center;
 }
 
 header img {
@@ -228,4 +229,75 @@ section button {
     border-radius: 10px;
     border: #000;
     margin-top: 10px;
+}
+
+/* footer */
+
+footer{
+    background: rgb(226, 233, 233);
+    margin: 20px;
+}
+
+footer .inp{
+    background: white;
+    
+}
+
+footer .inp input{
+    outline: none;
+    border: none;
+    font-size: 10px;
+}
+
+footer .block{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+footer .block-1{
+    display: flex;
+    flex-direction: row;
+    
+}
+footer .block-1 .b1,.b2{
+    display: flex;
+    gap: 9px;
+
+    flex-direction: column;
+}
+footer .block a{
+    font-size: 8px;
+    text-decoration: none;
+color: black;
+}
+
+footer .block p{
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+
+footer h6{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.social-media p{
+    font-size: 12px;
+}
+
+
+.social-media{
+    display: flex;
+    color: black;
+    font-size: 10px;
+    gap: 10px;
+}
+
+.footer2 h6{
+    font-size: 9px;
+    color: rgb(185, 185, 185);
 }
