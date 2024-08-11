@@ -81,8 +81,8 @@ header ul li:hover::before {
 }
 
 .body {
-    background: linear-gradient(to bottom, lightblue, white);
-
+    background: linear-gradient(to bottom, lightblue, white, rgb(245, 220, 223), white);
+    overflow: hidden;
 }
 
 section {
@@ -91,10 +91,10 @@ section {
     display: flex;
     padding: 50px;
 }
-
+/* 
 section .details {
     margin-top: 50px;
-}
+} */
 
 section .details .heading {
     font-size: 80px;
@@ -165,7 +165,7 @@ section button {
     position: relative;
 }
 
-.card img{
+.card img {
     height: 280px;
 }
 
@@ -187,14 +187,14 @@ section button {
     padding: 10px;
 }
 
-.card .details .name{
+.card .details .name {
     display: flex;
     justify-content: space-between;
     font-size: 15px;
 
 }
 
-.card .details .name span{
+.card .details .name span {
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -202,27 +202,29 @@ section button {
     right: 30px;
 
 }
-.card .details .name span:nth-child(2){
+
+.card .details .name span:nth-child(2) {
     right: 40px;
 }
+
 .card .details .price {
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
-.card .details .price del{
+.card .details .price del {
     font-weight: 500;
     font-size: 12px;
     color: gray;
 }
 
-.card .details .price span{
+.card .details .price span {
     color: green;
     font-weight: 600;
 }
 
-.card .details button{
+.card .details button {
     color: white;
     background-color: #000;
     padding: 6px;
@@ -233,46 +235,49 @@ section button {
 
 /* footer */
 
-footer{
+footer {
     background: rgb(226, 233, 233);
     margin: 20px;
 }
 
-footer .inp{
+footer .inp {
     background: white;
-    
+
 }
 
-footer .inp input{
+footer .inp input {
     outline: none;
     border: none;
     font-size: 10px;
 }
 
-footer .block{
+footer .block {
     display: flex;
     flex-direction: column;
     gap: 9px;
 }
 
-footer .block-1{
+footer .block-1 {
     display: flex;
     flex-direction: row;
-    
+
 }
-footer .block-1 .b1,.b2{
+
+footer .block-1 .b1,
+.b2 {
     display: flex;
     gap: 9px;
 
     flex-direction: column;
 }
-footer .block a{
+
+footer .block a {
     font-size: 8px;
     text-decoration: none;
-color: black;
+    color: black;
 }
 
-footer .block p{
+footer .block p {
     font-size: 10px;
     font-weight: 600;
     margin-top: 10px;
@@ -280,24 +285,29 @@ footer .block p{
 }
 
 
-footer h6{
+footer h6 {
     font-size: 12px;
     margin-top: 20px;
 }
 
-.social-media p{
+.social-media p {
     font-size: 12px;
 }
 
 
-.social-media{
+.social-media {
     display: flex;
     color: black;
-    font-size: 10px;
+    font-size: 13px;
     gap: 10px;
 }
 
-.footer2 h6{
+.footer3 h6 {
     font-size: 9px;
     color: rgb(185, 185, 185);
+}
+
+/* media query */
+@media screen {
+    
 }
