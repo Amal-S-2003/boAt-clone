@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./images/a.webp" type="image/x-icon">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -24,8 +25,12 @@
     <!-- Navbar -->
 
     <header>
-        <img src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434"
-            alt="logo">
+        <div class="logo d-flex align-items-center">
+            <i class="fa-solid fa-bars menu-btn"></i>
+
+            <img src="./images/boat_logo.png"
+                alt="logo">
+        </div>
         <ul class="menu">
             <li>Categories<i class="fa-solid fa-chevron-down"></i></li>
             <li>boAt Personalisation</li>
@@ -38,6 +43,7 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text">
             </div>
+            <i class="fa-solid fa-magnifying-glass lens"></i>
             <i class="fa-regular fa-user"></i>
             <i class="fa-solid fa-bag-shopping"></i>
         </div>
@@ -48,41 +54,49 @@
     <div class="body">
         <!-- item 1 -->
         <section>
-            <div class="details">
-                <p class="heading">True Wireless</p>
-                <h2>Earbuds</h2>
-                <p>Starting from <b>₹999*</b></p>
-                <button>Shop Products &nbsp;<i class="fa-solid fa-circle-arrow-right"></i></button>
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <div class="details">
+                        <p class="heading">True Wireless</p>
+                        <h2>Earbuds</h2>
+                        <p>Starting from <b>₹999*</b></p>
+                        <button>Shop Products &nbsp;<i class="fa-solid fa-circle-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+
+                    <img src="./images/a.webp" alt="picture">
+                </div>
             </div>
-            <img src="./images/a.webp" alt="picture">
         </section>
         <div class="items">
             <div class="heading " style="display: flex;">
                 <p class="seller">Best <b>Selle<span>rs</span></b></p>
                 <a href="#">View All&nbsp;<i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
-            <div class="row p-5">
-                <div class="col-3">
+            <div class="row p-5 row-gap-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/a1.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">40 Hours Playback</p>
                         <div class="details">
                             <div class="name">
                                 <b>boAt Airdops 161 </b>
-                                <span class="bg-danger"></span>
+                                <span class="bg-dark"></span>
                                 <span class="bg-success"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$899</b>
-                                <del>$2499</del>
+                                <b>₹899</b>
+                                <del>₹2499</del>
                                 <span>64% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/a2.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">40 Hours Playback</p>
@@ -90,39 +104,39 @@
                             <div class="name">
                                 <b>boAt Airdops 131 </b>
                                 <span class="bg-danger"></span>
-                                <span class="bg-success"></span>
+                                <span class="bg-info"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$799</b>
-                                <del>$2999</del>
+                                <b>₹799</b>
+                                <del>₹2999</del>
                                 <span>73% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/a3.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">40 Hours Playback</p>
                         <div class="details">
                             <div class="name">
                                 <b>boAt Airdops Ultra Plus </b>
-                                <span class="bg-danger"></span>
-                                <span class="bg-success"></span>
+                                <span class="bg-primary"></span>
+                                <span class="bg-warning"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$1,549</b>
-                                <del>$499</del>
+                                <b>₹1,549</b>
+                                <del>₹499</del>
                                 <span>69% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/a4.png" alt="boat">
                         <p class="info bg-warning px-4 py-1">40 Hours Playback</p>
@@ -134,8 +148,8 @@
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$1099</b>
-                                <del>$4499</del>
+                                <b>₹1099</b>
+                                <del>₹4499</del>
                                 <span>76% off</span>
                             </div>
                             <button>Add To Cart</button>
@@ -145,9 +159,9 @@
             </div>
         </div>
         <!-- item 2 -->
-        <section>
-            <img src="./images/w.png" alt="picture">
-            <div class="details mx-5">
+        <section class="row ">
+            <img class=" col-md-6 col-sm-12" src="./images/w.png" alt="picture">
+            <div class="details mb-sm-5 col-md-6 col-sm-12">
                 <p class="heading">Smart</p>
                 <h2>Watches</h2>
                 <p>Starting from <b>₹1699*</b></p>
@@ -155,12 +169,12 @@
             </div>
         </section>
         <div class="items">
-            <div class="heading " style="display: flex;">
-                <p class="seller">Best <b>Selle<span>rs</span></b></p>
+            <div class="heading mt-5" style="display: flex;">
+                <p class="seller ">Best <b>Selle<span>rs</span></b></p>
                 <a href="#">View All&nbsp;<i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
-            <div class="row p-5">
-                <div class="col-3">
+            <div class="row p-5 row-gap-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/w1.webp" alt="boat">
                         <p class="info bg-warning px-4 py-1">AMOLED Display</p>
@@ -168,72 +182,72 @@
                             <div class="name">
                                 <b>boAt Ultima Chronos </b>
                                 <span class="bg-danger"></span>
-                                <span class="bg-success"></span>
+                                <span class="bg-secondary"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$1599</b>
-                                <del>$8999</del>
+                                <b>₹1599</b>
+                                <del>₹8999</del>
                                 <span>82% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/w2.webp" alt="boat">
                         <p class="info bg-warning px-4 py-1">Bt Calling</p>
                         <div class="details">
                             <div class="name">
                                 <b>boAt Ultima connect Max </b>
-                                <span class="bg-danger"></span>
-                                <span class="bg-success"></span>
+                                <span class="bg-info"></span>
+                                <span class="bg-warning"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$799</b>
-                                <del>$2999</del>
+                                <b>₹799</b>
+                                <del>₹2999</del>
                                 <span>73% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/w3.webp" alt="boat">
                         <p class="info bg-warning px-4 py-1">AMOLED Display</p>
                         <div class="details">
                             <div class="name">
                                 <b>boAt Ultima Prism </b>
-                                <span class="bg-danger"></span>
-                                <span class="bg-success"></span>
+                                <span class="bg-secondary"></span>
+                                <span class="bg-primary"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$1,599</b>
-                                <del>$8,999</del>
+                                <b>₹1,599</b>
+                                <del>₹8,999</del>
                                 <span>77% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/w4.gif" alt="boat">
                         <p class="info bg-warning px-4 py-1">AMOLED Display</p>
                         <div class="details">
                             <div class="name">
                                 <b>boAt Ultima Prism </b>
-                                <span class="bg-danger"></span>
-                                <span class="bg-success"></span>
+                                <span class="bg-info"></span>
+                                <span class="bg-dark"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$1099</b>
-                                <del>$4499</del>
+                                <b>₹1099</b>
+                                <del>₹4499</del>
                                 <span>76% off</span>
                             </div>
                             <button>Add To Cart</button>
@@ -244,95 +258,95 @@
 
         </div>
         <!-- item 3 -->
-        <section>
-            <div class="details">
+        <section class="row">
+            <div class="details col-md-6 col-sm-12">
                 <!-- <p class="heading">True Wireless</p> -->
                 <h2>Neckbands</h2>
                 <p>Starting from <b>₹999*</b></p>
                 <button>Shop Products &nbsp;<i class="fa-solid fa-circle-arrow-right"></i></button>
             </div>
-            <img src="./images/nb.png" alt="picture">
+            <img class=" col-md-6 col-sm-12" src="./images/nb.png" alt="picture">
         </section>
         <div class="items">
             <div class="heading " style="display: flex;">
                 <p class="seller">Best <b>Selle<span>rs</span></b></p>
                 <a href="#">View All&nbsp;<i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
-            <div class="row p-5">
-                <div class="col-3">
+            <div class="row p-5 row-gap-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/nb1.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">40 Hours Playback</p>
                         <div class="details">
                             <div class="name">
                                 <b>boAt Rockerz 110 </b>
-                                <span class="bg-danger"></span>
+                                <span class="bg-warning"></span>
                                 <span class="bg-success"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$759</b>
-                                <del>$2499</del>
+                                <b>₹759</b>
+                                <del>₹2499</del>
                                 <span>70% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/nb2.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">40 Hours Playback</p>
                         <div class="details">
                             <div class="name">
                                 <b>boAt Rockerz 255 Pro+ </b>
-                                <span class="bg-danger"></span>
-                                <span class="bg-success"></span>
+                                <span class="bg-primary"></span>
+                                <span class="bg-info"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$1,249</b>
-                                <del>$3,999</del>
+                                <b>₹1,249</b>
+                                <del>₹3,999</del>
                                 <span>69% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/nb3.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">30 Hours Playback</p>
                         <div class="details">
                             <div class="name">
                                 <b>boAt Rockerz 19V2 Pro </b>
-                                <span class="bg-danger"></span>
+                                <span class="bg-secondary"></span>
                                 <span class="bg-success"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$1,359</b>
-                                <del>$3,499</del>
+                                <b>₹1,359</b>
+                                <del>₹3,499</del>
                                 <span>61% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/nb4.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">40 Hours Playback</p>
                         <div class="details">
                             <div class="name">
                                 <b>boAt Rockerz Trinity </b>
-                                <span class="bg-danger"></span>
-                                <span class="bg-success"></span>
+                                <span class="bg-dark"></span>
+                                <span class="bg-warning"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$1,199</b>
-                                <del>$2,499</del>
+                                <b>₹1,199</b>
+                                <del>₹2,499</del>
                                 <span>52% off</span>
                             </div>
                             <button>Add To Cart</button>
@@ -342,9 +356,9 @@
             </div>
         </div>
         <!-- item 4 -->
-        <section>
-            <img src="./images/hp.png" alt="picture">
-            <div class="details mx-5">
+        <section class="row">
+            <img class=" col-md-6 col-sm-12" src="./images/hp.png" alt="picture">
+            <div class="details my-5 col-md-6 col-sm-12 ">
                 <!-- <p class="heading">Smart</p> -->
                 <h2>Headphones</h2>
                 <p>Starting from <b>₹1199*</b></p>
@@ -356,68 +370,68 @@
                 <p class="seller">Best <b>Selle<span>rs</span></b></p>
                 <a href="#">View All&nbsp;<i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
-            <div class="row p-5">
-                <div class="col-3">
+            <div class="row p-5 row-gap-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/hp1.png" alt="boat">
                         <p class="info bg-warning px-4 py-1">20 Hours Playback</p>
                         <div class="details">
                             <div class="name">
                                 <b>boAt Rockerz 550 FM </b>
-                                <span class="bg-danger"></span>
+                                <span class="bg-primary"></span>
                                 <span class="bg-dark"></span>
                                 <p>+3</p>
                             </div>
                             <div class="price">
-                                <b>$4,999</b>
-                                <del>$2499</del>
+                                <b>₹4,999</b>
+                                <del>₹2499</del>
                                 <span>70% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/hp2.png" alt="boat">
                         <p class="info bg-warning px-4 py-1">20 Hours Playback</p>
                         <div class="details">
                             <div class="name">
                                 <b>boAt Rockerz 550 </b>
-                                <span class="bg-danger"></span>
-                                <span class="bg-success"></span>
+                                <span class="bg-dark"></span>
+                                <span class="bg-warning"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$1,249</b>
-                                <del>$3,999</del>
+                                <b>₹1,249</b>
+                                <del>₹3,999</del>
                                 <span>69% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/nb3.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">30 Hours Playback</p>
                         <div class="details">
                             <div class="name">
                                 <b> Rockerz 450 Polo </b>
+                                <span class="bg-secondary"></span>
                                 <span class="bg-danger"></span>
-                                <span class="bg-success"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$1,689</b>
-                                <del>$3,499</del>
+                                <b>₹1,689</b>
+                                <del>₹3,499</del>
                                 <span>61% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/hp4.png" alt="boat">
                         <p class="info bg-warning px-4 py-1">40 Hours Playback</p>
@@ -425,12 +439,12 @@
                             <div class="name">
                                 <b>boAt Rockerz Trinity </b>
                                 <span class="bg-danger"></span>
-                                <span class="bg-success"></span>
+                                <span class="bg-primary"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$1,999</b>
-                                <del>$3,999</del>
+                                <b>₹1,999</b>
+                                <del>₹3,999</del>
                                 <span>52% off</span>
                             </div>
                             <button>Add To Cart</button>
@@ -440,82 +454,85 @@
             </div>
         </div>
         <!-- item 5 -->
-        <section>
-            <div class="details">
+        <section class="row h-auto">
+            <div class="details col-md-6 col-sm-12 ">
                 <p class="heading"> Wireless</p>
                 <h2>Speakers</h2>
                 <p>Starting from <b>₹749*</b></p>
                 <button>Shop Products &nbsp;<i class="fa-solid fa-circle-arrow-right"></i></button>
             </div>
-            <img src="./images/ws.png" style="height: 60%; margin-left: 170px;" alt="picture">
+            <div class="col-md-4 float-end col-sm-12">
+
+                <img  src="./images/ws.png" class="w-100" alt="picture">
+            </div>
         </section>
         <div class="items">
             <div class="heading " style="display: flex;">
                 <p class="seller">Best <b>Selle<span>rs</span></b></p>
                 <a href="#">View All&nbsp;<i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
-            <div class="row p-5">
-                <div class="col-3">
+            <div class="row p-5 row-gap-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/ws1.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">12 Hours Playback</p>
                         <div class="details">
                             <div class="name">
                                 <b>boAt Stone 350 </b>
-                                <span class="bg-danger"></span>
-                                <span class="bg-success"></span>
+                                <span class="bg-info"></span>
+                                <span class="bg-dark"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$759</b>
-                                <del>$2499</del>
+                                <b>₹759</b>
+                                <del>₹2499</del>
                                 <span>70% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/ws2.png" alt="boat">
                         <p class="info bg-warning px-4 py-1">12 Hours Playback</p>
                         <div class="details">
                             <div class="name">
                                 <b>boAt Stone 190 Pro </b>
-                                <span class="bg-danger"></span>
-                                <span class="bg-success"></span>
+                                <span class="bg-primary"></span>
+                                <span class="bg-warning"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$999</b>
-                                <del>$3,999</del>
+                                <b>₹999</b>
+                                <del>₹3,999</del>
                                 <span>69% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/ws3.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">12 Hours Playback</p>
                         <div class="details">
                             <div class="name">
                                 <b>boAt stone 352 </b>
-                                <span class="bg-danger"></span>
-                                <span class="bg-success"></span>
+                                <span class="bg-primary"></span>
+                                <span class="bg-secondary"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$1,699</b>
-                                <del>$3,499</del>
+                                <b>₹1,699</b>
+                                <del>₹3,499</del>
                                 <span>61% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/ws4.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">12 Hours Playback</p>
@@ -524,11 +541,11 @@
                                 <b>boAt Stone 180 </b>
                                 <span class="bg-danger"></span>
                                 <span class="bg-success"></span>
-                                <p>+5</p>
+                                <p>+2</p>
                             </div>
                             <div class="price">
-                                <b>$979</b>
-                                <del>$2,499</del>
+                                <b>₹979</b>
+                                <del>₹2,499</del>
                                 <span>52% off</span>
                             </div>
                             <button>Add To Cart</button>
@@ -538,9 +555,9 @@
             </div>
         </div>
         <!-- item 6 -->
-        <section>
-            <img src="./images/sp.png" alt="picture">
-            <div class="details mx-5">
+        <section class="row">
+            <img class=" col-md-6 col-sm-12" src="./images/sp.png" alt="picture">
+            <div class="details col-md-5 mb-5  col-sm-12  ">
                 <p class="heading">Party</p>
                 <h2>Speakers</h2>
                 <p>Starting from <b>₹1199*</b></p>
@@ -552,8 +569,8 @@
                 <p class="seller">Best <b>Selle<span>rs</span></b></p>
                 <a href="#">View All&nbsp;<i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
-            <div class="row p-5">
-                <div class="col-3">
+            <div class="row p-5 row-gap-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/sp1.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">6 Hours Playback</p>
@@ -561,72 +578,72 @@
                             <div class="name">
                                 <b>boAt Party Pal 195</b>
                                 <span class="bg-danger"></span>
-                                <span class="bg-dark"></span>
+                                <span class="bg-warning"></span>
                                 <p>+3</p>
                             </div>
                             <div class="price">
-                                <b>$7,999</b>
-                                <del>$17,999</del>
+                                <b>₹7,999</b>
+                                <del>₹17,999</del>
                                 <span>56% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/sp2.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">6 Hours Playback</p>
                         <div class="details">
                             <div class="name">
                                 <b>boAt Party Pal 400</b>
-                                <span class="bg-danger"></span>
-                                <span class="bg-success"></span>
+                                <span class="bg-info"></span>
+                                <span class="bg-dark"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$15,999</b>
-                                <del>$34,999</del>
+                                <b>₹15,999</b>
+                                <del>₹34,999</del>
                                 <span>54% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/sp3.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">80W RMS Sound</p>
                         <div class="details">
                             <div class="name">
                                 <b>boAt Party Pal 220 </b>
-                                <span class="bg-danger"></span>
-                                <span class="bg-success"></span>
+                                <span class="bg-primary"></span>
+                                <span class="bg-dark"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$8,999</b>
-                                <del>$24,999</del>
+                                <b>₹8,999</b>
+                                <del>₹24,999</del>
                                 <span>64% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/sp4.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">50W RMS Sound</p>
                         <div class="details">
                             <div class="name">
                                 <b> boAt Party Pal 185 </b>
-                                <span class="bg-danger"></span>
+                                <span class="bg-info"></span>
                                 <span class="bg-success"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$5,839</b>
-                                <del>$17,999</del>
+                                <b>₹5,839</b>
+                                <del>₹17,999</del>
                                 <span>68% off</span>
                             </div>
                             <button>Add To Cart</button>
@@ -637,22 +654,24 @@
             </div>
         </div>
         <!-- item 7 -->
-        <section>
-            <div class="details">
+        <section class="row mb-5 row-gap-3">
+            <div class="details col-md-6 col-sm-12">
                 <p class="heading"> Wireless</p>
                 <h2>Speakers</h2>
                 <p>Starting from <b>₹749*</b></p>
                 <button>Shop Products &nbsp;<i class="fa-solid fa-circle-arrow-right"></i></button>
             </div>
-            <img src="./images/sb.png" style="width: 100%;margin-left: 100px;" alt="picture">
+            <div class="col-sm-6">
+                <img src="./images/sb.png" class="ms-md-5  h-100"  alt="picture">
+            </div>
         </section>
         <div class="items">
             <div class="heading " style="display: flex;">
                 <p class="seller">Best <b>Selle<span>rs</span></b></p>
                 <a href="#">View All&nbsp;<i class="fa-solid fa-circle-arrow-right"></i></a>
             </div>
-            <div class="row p-5">
-                <div class="col-3">
+            <div class="row p-5 row-gap-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/sb1.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">160W RMS Sound</p>
@@ -660,20 +679,20 @@
                             <div class="name">
                                 <b>boAt Aavante Bar Orion Plus
                                 </b>
-                                <span class="bg-danger"></span>
+                                <span class="bg-warning"></span>
                                 <span class="bg-success"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$14,999</b>
-                                <del>$21,999</del>
+                                <b>₹14,999</b>
+                                <del>₹21,999</del>
                                 <span>32% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/sb2.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">Dolby Atmos
@@ -682,40 +701,40 @@
                         <div class="details">
                             <div class="name">
                                 <b>boAt Aavante Bar 5500DA</b>
-                                <span class="bg-danger"></span>
-                                <span class="bg-success"></span>
+                                <span class="bg-info"></span>
+                                <span class="bg-primary"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$20,959</b>
-                                <del>$59,999</del>
+                                <b>₹20,959</b>
+                                <del>₹59,999</del>
                                 <span>65% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/sb3.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">Wired Subwoofer</p>
                         <div class="details">
                             <div class="name">
                                 <b>boAt Aavante Bar 2600 </b>
-                                <span class="bg-danger"></span>
-                                <span class="bg-success"></span>
+                                <span class="bg-dark"></span>
+                                <span class="bg-warning"></span>
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$13,999</b>
-                                <del>$29,999</del>
+                                <b>₹13,999</b>
+                                <del>₹29,999</del>
                                 <span>53% off</span>
                             </div>
                             <button>Add To Cart</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <div class="card">
                         <img src="./images/sb4.jpg" alt="boat">
                         <p class="info bg-warning px-4 py-1">300W RMS Sound</p>
@@ -727,8 +746,8 @@
                                 <p>+5</p>
                             </div>
                             <div class="price">
-                                <b>$13,999</b>
-                                <del>$29,999</del>
+                                <b>₹13,999</b>
+                                <del>₹29,999</del>
                                 <span>53% off</span>
                             </div>
                             <button>Add To Cart</button>
@@ -739,10 +758,10 @@
         </div>
         <!-- </div> -->
         <!-- Footer -->
-        <footer class="py-2">
-            <div class="row m-5">
-                <div class="col-3 g-1 d-flex flex-column">
-                    <img src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434"
+        <footer class="">
+            <div class="row my-5">
+                <div class="col-md-3 col-sm-12 g-1 d-flex flex-column p-3">
+                    <img src="./images/boat_logo.png"
                         alt="logo" style="width: 100px;"><br>
                     <b>Subscribe to our email alerts!</b>
                     <div class="inp px-3 mt-1 py-1 d-flex justify-content-between align-items-center">
@@ -751,7 +770,7 @@
                     </div>
                 </div>
                 <div class="col-1"></div>
-                <div class="col-4">
+                <div class="col-md-4 col-sm-12">
                     <h6>shop</h6>
                     <div class="block block-1">
                         <div class="b1 col-6">
@@ -761,7 +780,7 @@
                             <a href="#">Smart Watches</a>
                             <a href="#">Misfit Trimmers</a>
                         </div>
-                        <div class="b2 col-6">
+                        <div class="b2 col-md-6 col-sm-12">
                             <a href="#">Wireless Headphones</a>
                             <a href="#">Wireless Speakers</a>
                             <a href="#">Mobile Accessories</a>
@@ -770,7 +789,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-md-2 col-sm-12">
                     <h6>Help</h6>
                     <div class="block">
                         <a href="#"> Your Order </a>
@@ -782,7 +801,7 @@
                         <a href="#"> Why Buy Direct</a>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-md-2 col-sm-12">
                     <h6>Company</h6>
                     <div class="block">
 
@@ -798,8 +817,8 @@
                 </div>
             </div>
 
-            <div class="footer2  p-5 d-flex" style="background-color: rgb(236, 239, 240);">
-                <div class="col-3">
+            <div class="footer2 row  p-5 d-flex" style="background-color: rgb(236, 239, 240);">
+                <div class="col-md-3 col-sm-12">
                     <h6>True Wireless Earbuds</h6>
                     <div class="block">
 
@@ -816,7 +835,7 @@
                         <a href="#"> Earbuds Above 5000</a>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <h6> Wireless Speakers</h6>
                     <div class="block">
 
@@ -835,7 +854,7 @@
                         <a href="#"> Bluetooth Speakers Above 5000</a>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <h6>Trimmers</h6>
                     <div class="block">
                         <p>Shop by Features</p>
@@ -857,7 +876,7 @@
 
 
                 </div>
-                <div class="col-3">
+                <div class="col-md-3 col-sm-12">
                     <h6>Chargers</h6>
                     <div class="block">
                         <p>Shop by Features</p>
@@ -880,7 +899,7 @@
                 </div>
             </div>
 
-            <div class="row footer2 footer3 text-center">
+            <div class="row footer2  footer3 text-center">
                 <div class="social-media justify-content-center mt-3">
                     <p>Let's get social</p>
                     <a href=""><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></a>

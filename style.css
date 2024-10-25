@@ -23,6 +23,7 @@ header ul {
     list-style: none;
     margin-top: 20px;
     align-items: center;
+    cursor: pointer;
 }
 
 header img {
@@ -80,15 +81,27 @@ header ul li:hover::before {
     transform: scaleX(1);
 }
 
+header .menu-btn,.lens{
+    display: none;
+    font-size: 20px;
+    margin-right: 10px;
+}
+/* header .lens{
+    display: none;
+    font-size: 20px;
+} */
 .body {
-    background: linear-gradient(to bottom, lightblue, white, rgb(245, 220, 223), white);
+    background: linear-gradient(to bottom, rgb(203, 221, 224), white, rgb(245, 220, 223), white);
     overflow: hidden;
+    /* margin-top: 90px; */
 }
 
 section {
     position: relative;
     top: 70px;
     display: flex;
+    /* align-items: center;
+    justify-content: center; */
     padding: 50px;
 }
 /* 
@@ -153,16 +166,14 @@ section button {
     font-weight: 700;
 }
 
-.item .card {
-    width: 100px;
-}
-
 .card img {
     width: 100%;
 }
 
 .card {
     position: relative;
+    overflow: hidden;
+    border-radius: 70px;
 }
 
 .card img {
@@ -178,6 +189,7 @@ section button {
     top: 265px;
     left: 50px;
     right: 50px;
+    text-align: center;
 }
 
 .card .details {
@@ -237,7 +249,7 @@ section button {
 
 footer {
     background: rgb(226, 233, 233);
-    margin: 20px;
+    /* margin: 20px; */
 }
 
 footer .inp {
@@ -308,6 +320,64 @@ footer h6 {
 }
 
 /* media query */
-@media screen {
-    
-}
+@media only screen and (max-width: 600px) {
+    header{
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+    header .menu-btn,.lens {
+        display: block;
+    }
+    header .menu{
+        display: none;
+    }
+    header .input{
+        display: none;
+    }
+
+    section{
+        text-align: center;
+    }
+
+    section .details .heading{
+        font-size:35px;
+    }
+
+    section .details h2{
+        font-size: 33px;
+        font-weight: 600;
+    }
+
+    section .details p{
+        font-size: 13px;
+    }
+
+    section .details button{
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    section img{
+        width: 100%;
+    }
+   
+    /* .items .row{
+        display: flex;
+        width: 1400px;
+        /* overflow-x: auto; */
+        /* overflow-y: hidden; */
+        /* overflow: hidden; */
+    /* }  */
+    .card .info {
+        top: 265px;
+        font-size: 13px;
+
+    }
+    .card .details {
+        margin-top: 30px;
+
+    }
+    footer {
+        padding: 20px;
+    }
+  }
